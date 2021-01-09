@@ -8,6 +8,7 @@ import Select from "@material-ui/core/Select";
 import Chip from "@material-ui/core/Chip";
 import Input from "@material-ui/core/Input";
 import { Button } from "@material-ui/core";
+import { NavLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -170,9 +171,11 @@ export default function ProfileDetails() {
             ))}
           </Select>
         </FormControl>
+            <NavLink to="/Main">
         <Button variant="contained" size="large" color="primary" className={classes.margin}>
-          Large
+          Submit
         </Button>
+        </NavLink>
       </div>
     </form>
   );
