@@ -17,7 +17,7 @@ function ImageSlider() {
       <div className="card-wrapper">
         <div className="card">
           <div className="card-image">
-            <a href="https://drive.google.com/file/d/1AvBufOPnik44i5inN1Lgi4lmXiDBnpt1/view?usp=sharing" target="_blank">
+            <a href="../tutorials/tut 1.pdf" target="_blank">
               {""}
             <img src="../slide images/3.jpg" alt="" />
             </a>
@@ -36,7 +36,7 @@ function ImageSlider() {
       <div className="card-wrapper">
         <div className="card">
           <div className="card-image">
-          <a href="../tutorials/tut2.pdf" target="_blank">
+          <a href="../tutorials/tut 2.pdf" target="_blank">
             {""}
             <img src="../slide images/1.jpg" alt="" />
             </a>
@@ -50,7 +50,10 @@ function ImageSlider() {
       <div className="card-wrapper">
         <div className="card">
           <div className="card-image">
+          <a href="../tutorials/tut 3.pdf" target="_blank">
+            {""}
             <img src="../slide images/2.jpg" alt="" />
+            </a>
           </div>
           {/*<ul className="social-icons">
                         <li><a href="#"><i className="fa fa-facebook"></i></a></li>
