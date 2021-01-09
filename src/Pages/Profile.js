@@ -171,9 +171,15 @@ export default function ProfileDetails() {
             ))}
           </Select>
         </FormControl>
+<<<<<<< HEAD
             <NavLink to="/Main">
         <Button variant="contained" size="large" color="primary" className={classes.margin}>
           Submit
+=======
+        <NavLink to="/Main">
+        <Button variant="contained" size="large" color="primary" className={classes.margin}>
+         Submit
+>>>>>>> 87f69ad068f6caa10e260ce7ed978f632b65d688
         </Button>
         </NavLink>
       </div>

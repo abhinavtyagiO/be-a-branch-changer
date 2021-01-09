@@ -4,6 +4,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import { NavLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(10)
   },
   button: {
-    margin: theme.spacing(0, 4)
+    margin: theme.spacing(0, 4),
+    color: "#000000"
   }
 }));
 
@@ -32,18 +34,29 @@ export default function Navbar() {
       <AppBar position="static" color="white">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            Logo
+            Branch Upgrader
           </Typography>
           <div className={classes.buttons}>
+          <NavLink to="/Mentor" style={{textDecoration: 'none'}}>
             <Button color="inherit" className={classes.button}>
-              edit profile
+             Mentor
             </Button>
+            </NavLink>
+            <NavLink to="/Stats" style={{textDecoration: 'none'}}>
             <Button color="inherit" className={classes.button}>
-              about
+              Stats
             </Button>
+            </NavLink>
+            <NavLink to="/Profile" style={{textDecoration: 'none'}}>
+            <Button color="inherit" className={classes.button}>
+              Edit Profile
+            </Button>
+            </NavLink>
+            <NavLink to="/Login" style={{textDecoration: 'none'}}>
             <Button color="inherit" className={classes.button}>
               logout
             </Button>
+            </NavLink>
           </div>
         </Toolbar>
       </AppBar>
