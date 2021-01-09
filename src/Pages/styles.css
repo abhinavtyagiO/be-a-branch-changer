@@ -14,4 +14,26 @@
   .img2 {
     margin-left: 5%;
   }
+  .form {
+    margin-left: 15%;
+    margin-top: 6%;
+  }
+  .upper {
+    /* margin-bottom: 2%; */
+    min-width: 30%;
+  }
+  .submit {
+    margin-top: 2%;
+    margin-left: 0.5%;
+  }
+  .second {
+    margin-bottom: 0.5%;
+  }
+  .third {
+    margin-bottom: 0.1%;
+  }
+  .name {
+    margin-left: 0.5%;
+    margin-bottom: 2%;
+  }
   
