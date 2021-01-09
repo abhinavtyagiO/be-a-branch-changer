@@ -18,7 +18,10 @@ function ImageSlider() {
       <div className="card-wrapper">
         <div className="card">
           <div className="card-image">
-            <img src="./images/3.jpg" alt="Hello" />
+            <a href="../tutorials/tut 1.pdf" target="_blank">
+              {""}
+            <img src="../slide images/3.jpg" alt="" />
+            </a>
           </div>
           {/* <ul className="social-icons">
                         <li><a href="#"><i className="fa fa-facebook"></i></a></li>
@@ -34,7 +37,10 @@ function ImageSlider() {
       <div className="card-wrapper">
         <div className="card">
           <div className="card-image">
-            <img src="./images/4.jpg" alt="" />
+          <a href="../tutorials/tut 2.pdf" target="_blank">
+            {""}
+            <img src="../slide images/1.jpg" alt="" />
+            </a>
           </div>
 
           <div className="details">
@@ -45,7 +51,10 @@ function ImageSlider() {
       <div className="card-wrapper">
         <div className="card">
           <div className="card-image">
-            <img src="./images/4.jpg" alt="" />
+          <a href="../tutorials/tut 3.pdf" target="_blank">
+            {""}
+            <img src="../slide images/2.jpg" alt="" />
+            </a>
           </div>
           {/*<ul className="social-icons">
                         <li><a href="#"><i className="fa fa-facebook"></i></a></li>
@@ -68,7 +77,7 @@ function ImageSlider() {
       <div className="card-wrapper">
         <div className="card">
           <div className="card-image">
-            <img src="./images/4.jpg" alt="" />
+            <img src="../slide images/4.jpg" alt="" />
           </div>
           {/* <ul className="social-icons">
                         <li><a href="#"><i className="fa fa-facebook"></i></a></li>
