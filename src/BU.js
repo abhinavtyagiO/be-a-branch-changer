@@ -14,7 +14,6 @@ class BU extends Component {
         <>
           {/* <Provider store={store}> */}
             <Router>
-                <Navbar />
                 <Switch>
                   <Route path="/" component={Login} exact={true} />
                   <Route path="/Signup" component={Signup} exact={true} />

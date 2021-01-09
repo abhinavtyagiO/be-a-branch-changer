@@ -9,6 +9,7 @@ import Chip from "@material-ui/core/Chip";
 import Input from "@material-ui/core/Input";
 import { Button } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
+import Navbar from "../Components/Navbar";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -86,6 +87,7 @@ export default function ProfileDetails() {
   };
 
   return (
+    <div><Navbar />
     <form
       className={classes.root}
       noValidate
@@ -178,5 +180,6 @@ export default function ProfileDetails() {
         </NavLink>
       </div>
     </form>
+    </div>
   );
 }

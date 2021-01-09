@@ -13,7 +13,7 @@ function ImageSlider() {
     cssEase: "linear"
   };
   return (
-    <div className="complete">
+    <div>
     <Slider {...settings}>
       <div className="card-wrapper">
         <div className="card">

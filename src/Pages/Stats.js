@@ -2,9 +2,11 @@ import React from "react";
 import "./styles.css";
 // import { ThemeProvider } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
+import Navbar from "../Components/Navbar";
 
 export default function Stats() {
   return (
+    <div><Navbar />
     <div className="Stats">
       <Grid container>
         <Grid item xs={12} sm={6} md={6} className="img1">
@@ -18,6 +20,7 @@ export default function Stats() {
           </div>
         </Grid>
       </Grid>
+    </div>
     </div>
   );
 }

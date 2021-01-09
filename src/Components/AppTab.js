@@ -64,7 +64,7 @@ export default function FullWidthTabs() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="default">
+      <AppBar position="static" color="white" style={{boxShadow: "none", marginTop: "2%"}}>
         <Tabs
           value={value}
           onChange={handleChange}
@@ -88,9 +88,9 @@ export default function FullWidthTabs() {
         index={value}
         onChangeIndex={handleChangeIndex}
       >
-        <TabPanel value={value} index={0} dir={theme.direction}>
-          <h2>Tutorials</h2> <ImageSlider />
-          <h2>Notes</h2>
+        <TabPanel value={value} index={0} dir={theme.direction} className="complete">
+          <h2 className="topics">Tutorials</h2> <ImageSlider /><br></br><br></br>
+          <h2 className="topics">Notes</h2>
           <ImageSlider />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
