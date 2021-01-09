@@ -16,11 +16,11 @@ export default function MSlider3() {
       <div className="card-wrapper">
         <div className="card">
           <div className="card-image">
-            <img src="./profilPic/Rohan.jpg" alt="" />
+            <img src="../Images/Yash.jpg" alt="" />
           </div>
           <ul className="social-icons">
             <li>
-              <a href="https://www.facebook.com/">
+              <a href="https://m.facebook.com/yash.bhanushali.779">
                 <img
                   src="./logos/facebook.jpg"
                   alt=""
@@ -42,58 +42,7 @@ export default function MSlider3() {
               </a>
             </li>
             <li>
-              <a href="https:www.gmail.com">
-                <img
-                  src="./logos/gmail.jpg"
-                  alt=""
-                  width="50px"
-                  height="50px"
-                />
-                <i className="fa fa-email"></i>
-              </a>
-            </li>
-          </ul>
-          <div className="details">
-            <h2>
-              Rohan Mishra{" "}
-              <span className="job-title">Polymer Science and Engineering</span>
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div className="card-wrapper">
-        <div className="card">
-          <div className="card-image">
-            <img
-              src="./profilPic/Yash Bhanushali.jpg"
-              alt=""
-            />
-          </div>
-          <ul className="social-icons">
-            <li>
-              <a href="https://www.facebook.com/">
-                <img
-                  src="./logos/facebook.jpg"
-                  alt=""
-                  width="50px"
-                  height="50px"
-                />
-                <i className="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://in.linkedin.com/">
-                <img
-                  src="./logos/linkedin.jpg"
-                  alt=""
-                  width="50px"
-                  height="50px"
-                />
-                <i className="fa fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https:www.gmail.com">
+              <a href="mailto:yash_b1@ch.iitr.ac.in">
                 <img
                   src="./logos/gmail.jpg"
                   alt=""
@@ -107,7 +56,7 @@ export default function MSlider3() {
           <div className="details">
             <h2>
               Yash Bhanushali{" "}
-              <span className="job-title">Polymer Science and Engineering</span>
+              <span className="job-title">Electronics and Communication Engineering</span>
             </h2>
           </div>
         </div>
@@ -115,16 +64,65 @@ export default function MSlider3() {
       <div className="card-wrapper">
         <div className="card">
           <div className="card-image">
-            <a href="https://www.google.com/search?q=cars&rlz=1C1JZAP_enIN927IN928&sxsrf=ALeKk005DPkkJmrBQWSy7QlXVVvtbH60_w:1610166792852&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjp193dgo7uAhVWU30KHQwoA_cQ_AUoAXoECAUQAw&biw=1280&bih=610">
+            <img
+              src="../images/Harshit.jpg"
+              alt=""
+            />
+          </div>
+          <ul className="social-icons">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100005894829572">
+                <img
+                  src="./logos/facebook.jpg"
+                  alt=""
+                  width="50px"
+                  height="50px"
+                />
+                <i className="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/harshit-jain-334966199/">
+                <img
+                  src="./logos/linkedin.jpg"
+                  alt=""
+                  width="50px"
+                  height="50px"
+                />
+                <i className="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:jainh335@gmail.com">
+                <img
+                  src="./logos/gmail.jpg"
+                  alt=""
+                  width="50px"
+                  height="50px"
+                />
+                <i className="fa fa-email"></i>
+              </a>
+            </li>
+          </ul>
+          <div className="details">
+            <h2>
+              Harshit Jain{" "}
+              <span className="job-title">Electronics and Communication Engineering</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div className="card-wrapper">
+        <div className="card">
+          <div className="card-image">
               <img
-                src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d3703e2f1176b00089761a6%2F960x0.jpg%3FcropX1%3D836%26cropX2%3D5396%26cropY1%3D799%26cropY2%3D3364&imgrefurl=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fjimgorzelany%2F2019%2F07%2F23%2Fhere-are-the-coolest-new-cars-for-2020%2F&tbnid=2HR6gA81oIwMTM&vet=12ahUKEwipg_Pego7uAhWqoUsFHbQbATQQMygAegUIARDOAQ..i&docid=HZLLyFhoQjvNCM&w=960&h=540&q=cars&ved=2ahUKEwipg_Pego7uAhWqoUsFHbQbATQQMygAegUIARDOAQ"
+                src="../images/Abhinav.jpg"
                 alt=""
               />
-            </a>
           </div>
           <ul className="social-icons">
             <li>
-              <a href="https://www.facebook.com/">
+              <a href="https://www.facebook.com/abhinav.tyagi.712161">
                 <img
                   src="./logos/facebook.jpg"
                   alt=""
@@ -135,7 +133,7 @@ export default function MSlider3() {
               </a>
             </li>
             <li>
-              <a href="https://in.linkedin.com/">
+              <a href="https://www.linkedin.com/in/abhinav-tyagi-00851719b">
                 <img
                   src="./logos/linkedin.jpg"
                   alt=""
@@ -146,7 +144,7 @@ export default function MSlider3() {
               </a>
             </li>
             <li>
-              <a href="https:www.gmail.com">
+              <a href="mailto:abhinav_t@pp.iitr.ac.in">
                 <img
                   src="./logos/gmail.jpg"
                   alt=""
@@ -159,7 +157,7 @@ export default function MSlider3() {
           </ul>
           <div className="details">
             <h2>
-              Name <span className="job-title">Branch</span>
+              Abhinav Tyagi <span className="job-title">Electronics and Communication Engineering</span>
             </h2>
           </div>
         </div>
@@ -167,11 +165,11 @@ export default function MSlider3() {
       <div className="card-wrapper">
         <div className="card">
           <div className="card-image">
-            <img src="./images/4.jpg" alt="" />
+            <img src="../images/Rohan.jpg" alt="" />
           </div>
           <ul className="social-icons">
             <li>
-              <a href="https://www.facebook.com/">
+              <a href="https://www.facebook.com/Rohan5800">
                 <img
                   src="./logos/facebook.jpg"
                   alt=""
@@ -182,7 +180,7 @@ export default function MSlider3() {
               </a>
             </li>
             <li>
-              <a href="https://in.linkedin.com/">
+              <a href="https://www.linkedin.com/in/rohan-mishra-aa56291b9">
                 <img
                   src="./logos/linkedin.jpg"
                   alt=""
@@ -193,7 +191,7 @@ export default function MSlider3() {
               </a>
             </li>
             <li>
-              <a href="https:www.gmail.com">
+              <a href="mailto:rohan_km@ch.iitr.ac.in">
                 <img
                   src="./logos/gmail.jpg"
                   alt=""
@@ -206,7 +204,7 @@ export default function MSlider3() {
           </ul>
           <div className="details">
             <h2>
-              Name <span className="job-title">Branch</span>
+              Rohan Mishra <span className="job-title">Electronics and Communication Engineering</span>
             </h2>
           </div>
         </div>

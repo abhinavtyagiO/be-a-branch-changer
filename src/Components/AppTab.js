@@ -92,7 +92,6 @@ export default function FullWidthTabs() {
           <h2>Tutorials</h2> <ImageSlider />
           <h2>Notes</h2>
           <ImageSlider />
-          <h1>Hello</h1>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
           Item Two

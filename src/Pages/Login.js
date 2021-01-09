@@ -17,7 +17,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://material-ui.com/">
-        Branch Changer
+        Branch Upgrader
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -27,8 +27,7 @@ function Copyright() {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: "100vh",
-    oreflow: "auto"
+    height: "100vh"
   },
   image: {
     backgroundImage: "url(https://source.unsplash.com/random)",
@@ -41,11 +40,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: "center"
   },
   paper: {
-    margin: theme.spacing(4, 4),
+    margin: theme.spacing(8, 4),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: "60px 100px",
+    padding: "60px 100px"
   },
   title: {
     alignmentBaseline: "bottom"
@@ -61,11 +60,10 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Signup() {
+export default function Login() {
   const classes = useStyles();
 
   return (
-      <div>
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
       <Grid item xs={false} sm={4} md={7} className={classes.image} />
@@ -74,13 +72,13 @@ export default function Signup() {
           <Grid container className={classes.title}>
             <Grid item xs>
               <Typography component="h1" variant="h5">
-                Signup
+                Login
               </Typography>
             </Grid>
             <Grid item>
-              Have an account?{" "}
-              <Link href="/" variant="body2">
-                {"Login"}
+              Or{" "}
+              <Link href="/Signup" variant="body2">
+                {"Create an account"}
               </Link>
             </Grid>
           </Grid>
@@ -90,27 +88,11 @@ export default function Signup() {
               margin="normal"
               required
               fullWidth
-              id="firstName"
-              label="First Name"
-              name="firstName"
-            />
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              id="lastName"
-              label="Last Name"
-              name="lastName"
-            />
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
               id="email"
               label="Email"
               name="email"
+              autoComplete="email"
+              autoFocus
             />
             <TextField
               variant="outlined"
@@ -123,31 +105,32 @@ export default function Signup() {
               id="password"
               autoComplete="current-password"
             />
-            <TextField
-              variant="outlined"
-              margin="normal"
-              required
-              fullWidth
-              name="passwordAgain"
-              label="Re-Enter Password"
-              type="password"
-              id="passwordAgain"
-              autoComplete="current-password"
-            />
             <FormControlLabel
-              control={<Checkbox value="emailNotifications" color="primary" />}
-              label="Get Email Notifications"
+              control={<Checkbox value="remember" color="primary" />}
+              label="Remember me"
             />
-            <NavLink to="/Profile">
+            <NavLink to="/Main">
             <Button
               type="submit"
               variant="contained"
               color="primary"
               className={classes.submit}
             >
-              Continue
+              Login
             </Button>
             </NavLink>
+            <Grid container>
+              <Grid item xs>
+                <Link href="#" variant="body2">
+                  Forgot password?
+                </Link>
+              </Grid>
+              <Grid item>
+                <Link href="#" variant="body2">
+                  {"Don't have an account? Sign Up"}
+                </Link>
+              </Grid>
+            </Grid>
             <Box mt={5}>
               <Copyright />
             </Box>
@@ -155,6 +138,5 @@ export default function Signup() {
         </div>
       </Grid>
     </Grid>
-    </div>
   );
 }
