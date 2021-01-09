@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Signup from "./Pages/Signup.js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import { Provider } from "react-redux";
 import Navbar from "./Components/Navbar";
 import Profile from "./Pages/Profile.js";
+import Main from "./Pages/Main";
+import Stats from "./Pages/Stats";
 
 class BU extends Component {
     render() {
@@ -15,6 +16,8 @@ class BU extends Component {
                 <Switch>
                   <Route path="/" component={Signup} exact={true} />
                   <Route path="/Profile" component={Profile}/>
+                  <Route path="/Main" component={Main}/>
+                  <Route path="/Stats" component={Stats}/>
                 </Switch>
             </Router>
           {/* </Provider> */}
