@@ -87,7 +87,7 @@ function ImageSlider() {
                     </ul>*/}
           <div className="details">
             <h2>
-              John Doe <span className="job-title">UI Developer</span>
+              Tutorial 4 
             </h2>
           </div>
         </div>

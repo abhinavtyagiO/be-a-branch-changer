@@ -93,11 +93,11 @@ export default function FullWidthTabs() {
           <h2 className="topics">Notes</h2>
           <ImageSlider />
         </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
-          Item Two
+        <TabPanel value={value} index={1} dir={theme.direction} className="complete">
+        <h2 className="topics">Will be uploaded real soon !!!</h2>
         </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
+        <TabPanel value={value} index={2} dir={theme.direction}className="complete">
+        <h2 className="topics">Will be uploaded real soon !!!</h2>
         </TabPanel>
       </SwipeableViews>
     </div>

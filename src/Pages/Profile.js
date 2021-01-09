@@ -10,17 +10,19 @@ import Input from "@material-ui/core/Input";
 import { Button } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
 import Navbar from "../Components/Navbar";
+import "./styles.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     "& .MuiTextField-root": {
       margin: theme.spacing(1),
       width: "25ch"
+      
     }
   },
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 300
+    minWidth: 400
   },
   selectEmpty: {
     marginTop: theme.spacing(20)
@@ -31,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
   },
   chip: {
     margin: 2
+  },
+  formWidth: {
+    minWidth: 300
   }
 }));
 const ITEM_HEIGHT = 48;
@@ -39,7 +44,7 @@ const MenuProps = {
   PaperProps: {
     style: {
       maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      width: 250
+      width: 500
     }
   }
 };
@@ -88,6 +93,8 @@ export default function ProfileDetails() {
 
   return (
     <div><Navbar />
+    <div className="form">
+      <h1 className="name">Edit Profile</h1>
     <form
       className={classes.root}
       noValidate
@@ -95,15 +102,17 @@ export default function ProfileDetails() {
       action="#"
       method="POST"
     >
-      <div>
-        <TextField id="filled-helperText" label="Name" variant="filled" />
-        {/* <TextField
-          className={classes.formControl}
-          id="filled-helperText"
-          label="Branch"
-          variant="filled"
-        />*/}
-        <FormControl variant="filled" className={classes.formControl}>
+      <div display="inline">
+        <div className="upper">
+         <TextField id="filled-helperText" label="Name" variant="filled" style= {{width: '20%'}} 
+          defaultValue="Harshit Jain"
+          InputProps={{
+            readOnly: true,
+          }}/>
+         </div>
+         <br></br>
+         <div className="second">
+         <FormControl variant="filled" className={classes.formControl}>
           <InputLabel id="demo-simple-select-filled-label">Branch</InputLabel>
           <Select
             labelId="demo-simple-select-filled-label"
@@ -138,12 +147,23 @@ export default function ProfileDetails() {
             <MenuItem value={16}>Polymer Science and Engineering</MenuItem>
           </Select>
         </FormControl>
+        </div>
+        
         <br></br>
+
+        <div className="third">
         <TextField
           id="filled-helperText"
           label="Enrollment Number"
           variant="filled"
+          style= {{width: '20%'}}
+          defaultValue="20111111"
+          InputProps={{
+            readOnly: true,
+          }}
         />
+        </div>
+        <br></br>
         <FormControl className={classes.formControl}>
           <InputLabel id="demo-mutiple-chip-label">Target Branch</InputLabel>
           <Select
@@ -173,13 +193,18 @@ export default function ProfileDetails() {
             ))}
           </Select>
         </FormControl>
+        
+        <div className="submit">
         <NavLink to="/Main">
         <Button variant="contained" size="large" color="primary" className={classes.margin}>
          Submit
         </Button>
         </NavLink>
+        </div>
+        
       </div>
     </form>
+    </div>
     </div>
   );
 }

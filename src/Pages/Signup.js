@@ -118,8 +118,7 @@ export default function Signup() {
               required
               fullWidth
               name="password"
-              label="Password"
-              type="password"
+              label="Enrollment Number"
               id="password"
               autoComplete="current-password"
             />
@@ -129,7 +128,7 @@ export default function Signup() {
               required
               fullWidth
               name="passwordAgain"
-              label="Re-Enter Password"
+              label="Enter Password"
               type="password"
               id="passwordAgain"
               autoComplete="current-password"
