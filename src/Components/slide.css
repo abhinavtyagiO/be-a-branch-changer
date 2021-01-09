@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
   }
+
+  .complete {
+    margin: 5%;
+  }
   
   body {
     display: block;

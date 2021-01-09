@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(0, 4),
     color: "#000000"
+  },
+  logo: {
+    color: "#000000"
   }
 }));
 
@@ -33,9 +36,11 @@ export default function Navbar() {
     <div className={classes.root}>
       <AppBar position="static" color="white">
         <Toolbar>
-          <Typography variant="h6" className={classes.title}>
+          <NavLink to="/Main" className={classes.title} style={{textDecoration: 'none'}}>
+          <Typography variant="h6" className={classes.logo}>
             Branch Upgrader
           </Typography>
+            </NavLink>
           <div className={classes.buttons}>
           <NavLink to="/Mentor" style={{textDecoration: 'none'}}>
             <Button color="inherit" className={classes.button}>
@@ -52,7 +57,7 @@ export default function Navbar() {
               Edit Profile
             </Button>
             </NavLink>
-            <NavLink to="/Login" style={{textDecoration: 'none'}}>
+            <NavLink to="/" style={{textDecoration: 'none'}}>
             <Button color="inherit" className={classes.button}>
               logout
             </Button>

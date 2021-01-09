@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import Profile from "./Pages/Profile.js";
 import Main from "./Pages/Main";
 import Stats from "./Pages/Stats";
+import Login from "./Pages/Login.js"
 
 class BU extends Component {
     render() {
@@ -14,7 +15,8 @@ class BU extends Component {
             <Router>
                 <Navbar />
                 <Switch>
-                  <Route path="/" component={Signup} exact={true} />
+                  <Route path="/" component={Login} exact={true} />
+                  <Route path="/Signup" component={Signup} exact={true} />
                   <Route path="/Profile" component={Profile}/>
                   <Route path="/Main" component={Main}/>
                   <Route path="/Stats" component={Stats}/>

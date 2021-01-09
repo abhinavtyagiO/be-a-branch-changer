@@ -27,7 +27,8 @@ function Copyright() {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: "100vh"
+    height: "100vh",
+    oreflow: "auto"
   },
   image: {
     backgroundImage: "url(https://source.unsplash.com/random)",
@@ -40,11 +41,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: "center"
   },
   paper: {
-    margin: theme.spacing(8, 4),
+    margin: theme.spacing(4, 4),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: "60px 100px"
+    padding: "60px 100px",
   },
   title: {
     alignmentBaseline: "bottom"
@@ -78,7 +79,7 @@ export default function Signup() {
             </Grid>
             <Grid item>
               Have an account?{" "}
-              <Link href="#" variant="body2">
+              <Link href="/" variant="body2">
                 {"Login"}
               </Link>
             </Grid>
