@@ -37,7 +37,7 @@ export default function Navbar() {
             Branch Upgrader
           </Typography>
           <div className={classes.buttons}>
-          <NavLink to="/Mentor" style={{textDecoration: 'none'}}>
+          <NavLink to="/Mentors" style={{textDecoration: 'none'}}>
             <Button color="inherit" className={classes.button}>
              Mentor
             </Button>
